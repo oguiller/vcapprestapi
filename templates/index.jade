@@ -1,0 +1,58 @@
+html
+  head
+    style(type='text/css').
+      table tr.OK {
+        background: #7ED321;
+      }
+
+      table tr.NVT {
+        background: #F5A623;
+      }
+
+      table tr.NOK {
+        background: #D0021B;
+        color: #ffffff;
+      }
+  body
+
+    table
+      tr
+        th Datum inspectieronde
+        td #{date}
+
+      tr
+        th Inspectieronde door
+        td #{inspector.name}
+
+      tr
+        th Vergezeld door
+        td #{work}
+
+      tr
+        th Locatie
+        td #{location}
+
+      tr
+        th Opdrachtgever
+        td #{company.name}
+
+      tr
+        th Werknemer(s)
+        td
+          each employee, i in employees
+            span #{employee + ' '}
+
+    table(style='width: 100%')
+      thead
+        tr
+          th(style='width: 90%; text-align: left') Onderwerp
+          th(style='width: 10%;')
+      tbody
+        each question, i in questions
+          tr(class=question.answer.status)
+            td #{question.text}
+            td(style='text-align: center') #{question.answer.status}
+            if question.answer.description
+              tr(class=question.answer.status)
+                td(colspan='2') #{question.answer.description}
+

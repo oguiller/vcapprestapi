@@ -1,0 +1,30 @@
+{
+  "attachments":{
+    
+  },
+  "date": "17/07/1982",
+  "inspector":{
+      "name":"Paula"
+  },
+  "work":"Software"
+  ,
+  "location": "Amsterdam"
+  ,"company":{
+    "name":"ReGuAl"
+  },
+  "employees": [{
+    "name": "Guillermo"
+  }, {
+    "name": "Redo"
+  },
+  {
+    "name": "Alex"
+  }],
+  "questions":[{
+    "text":"Whatever"
+    ,"answer":{
+      "status":"OK",
+      "description":"Whatever"
+    }
+  }]
+}

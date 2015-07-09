@@ -1,0 +1,14 @@
+
+
+table tr.OK {
+    background: #7ED321;
+}
+
+table tr.NVT {
+    background: #F5A623;
+}
+
+table tr.NOK {
+    background: #D0021B;
+    color: #ffffff;
+}
